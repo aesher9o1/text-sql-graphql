@@ -7,7 +7,7 @@
     "lint": "eslint src/*.ts",
     "format": "eslint src/*.ts --fix",
     "start": "npm run build && node dist/index.js",
-    "start:dev": "nodemon",
+    "dev": "nodemon",
     "build": "tsc"
   },
   "author": "aesher9o1",
@@ -26,7 +26,6 @@
     "apollo-server": "^2.11.0",
     "cors": "^2.8.5",
     "express": "^4.17.1",
-    "express-graphql": "^0.9.0",
     "graphql": "^14.6.0",
     "mysql2": "^2.1.0",
     "sequelize": "^5.21.5"

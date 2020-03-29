@@ -1,8 +1,8 @@
 /* eslint-disable @typescript-eslint/camelcase */
 import { Model, DataTypes } from 'sequelize';
-import { sequelize } from '../const/db'
+import { sequelize } from '../config/db'
 
-enum COURSE_TYPES {
+export enum COURSE_TYPES {
     'regular',
     'specialization',
     'specialization-part'
