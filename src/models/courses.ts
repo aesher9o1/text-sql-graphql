@@ -8,7 +8,7 @@ export enum COURSE_TYPES {
     'specialization-part'
 }
 
-export class CourseModel extends Model {
+class CourseModel extends Model {
     public id!: number
     public name!: string
     public url!: string
@@ -131,3 +131,5 @@ CourseModel.init({
     sequelize: sequelize,
     tableName: 'courses'
 })
+
+export default CourseModel
