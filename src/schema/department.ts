@@ -1,7 +1,7 @@
 import { gql } from 'apollo-server'
 
 export default gql`
-    type Query {
+    extend type Query {
         departments: [Department]!
     }
     type Department {

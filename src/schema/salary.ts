@@ -1,14 +1,13 @@
 import { gql } from 'apollo-server'
 
 export default gql`
-    scalar Date
-    type Query {
+    extend type Query {
         salaries: [Salary]!
     }
 
     type Salary {
         emp_no: ID!
-        salary: Number!
+        salary: Int!
         from_date: Date!
         to_date: Date! 
     }

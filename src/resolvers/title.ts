@@ -2,6 +2,8 @@ import { TitlesModel } from '../models'
 
 export default {
     Query: {
-        courses: async () => await TitlesModel.findAll()
+        titles: async () => await TitlesModel.findAll({
+            limit: 100
+        })
     }
 }

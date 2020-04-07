@@ -1,8 +1,7 @@
 import { gql } from 'apollo-server'
 
 export default gql`
-    scalar Date
-    type Query {
+    extend type Query {
         courses: [Course]!
         course(id: ID!, email:String!): Course
     }

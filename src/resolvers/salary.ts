@@ -2,6 +2,8 @@ import { SalariesModel } from '../models'
 
 export default {
     Query: {
-        courses: async () => await SalariesModel.findAll()
+        salaries: async () => await SalariesModel.findAll({
+            limit: 100
+        })
     }
 }

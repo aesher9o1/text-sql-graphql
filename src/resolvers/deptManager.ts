@@ -2,6 +2,8 @@ import { DeptManagerModel } from '../models'
 
 export default {
     Query: {
-        courses: async () => await DeptManagerModel.findAll()
+        deptManagers: async () => await DeptManagerModel.findAll({
+            limit: 100
+        })
     }
 }

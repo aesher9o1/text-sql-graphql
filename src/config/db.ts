@@ -1,5 +1,5 @@
 import { Sequelize } from 'sequelize'
-export const sequelize = new Sequelize('trainings', 'root', '', {
+export const sequelize = new Sequelize('employees', 'root', '', {
     host: "127.0.0.1",
     dialect: 'mysql',
     define: {
