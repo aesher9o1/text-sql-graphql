@@ -1,6 +1,6 @@
 import { gql } from 'apollo-server'
 
-const CourseSchema = gql`
+export default gql`
     scalar Date
     type Query {
         courses: [Course]!
@@ -32,5 +32,3 @@ const CourseSchema = gql`
         last_updated_at: Date!
     }
 `
-
-export default CourseSchema

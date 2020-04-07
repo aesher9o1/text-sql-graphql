@@ -1,15 +1,15 @@
 import CourseResolver from './course'
-import DepartmentResolver from './departments'
+import DepartmentResolver from './department'
 import DeptEmpResolver from './deptEmp'
-import EmployeesResolver from './employees'
-import SalariesResolver from './salaries'
-import TitlesResolver from './titles'
+import EmployeesResolver from './employee'
+import SalaryResolver from './salary'
+import TitleResolver from './title'
 
 export default [
     CourseResolver,
     DepartmentResolver,
     DeptEmpResolver,
     EmployeesResolver,
-    SalariesResolver,
-    TitlesResolver
+    SalaryResolver,
+    TitleResolver
 ]
